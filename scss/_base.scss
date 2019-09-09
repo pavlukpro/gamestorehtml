@@ -1,0 +1,25 @@
+ol, ul {
+	list-style-position: inside;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
