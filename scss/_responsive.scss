@@ -18,12 +18,33 @@
     .apf-av {
         width: 160px;
     }
+    .apg-col-big {
+        width: 208px;
+    }
 }
 
 @include media(1024) {
     .fixed {
         width: 720px;
     }
+
+    .head-flex {
+        min-height: 70px;
+    }
+
+    .head-flex {
+        .head-btn-block, .btn-login {
+            display: none;
+        }
+    }
+
+    .menu-icon {
+        width: 75px;
+        height: 73px;
+        border-radius: 0px;
+        margin: 0;
+    }
+
     .nav {
         display: none;
     }
@@ -317,6 +338,22 @@
         }
     }
 
+    .head-flex .user-block {
+        display: none;
+    }
+
+    .apg-right {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 33px;
+        justify-content: space-between;
+
+        .apg-col-big {
+            width: 48.5%;
+            margin: 8px 0 5px 0;
+        }
+    }
+
 }
 
 @include media(768) {
@@ -325,14 +362,8 @@
         margin: 0 15px;
     }
 
-    .head-flex {
-        .head-btn-block, .btn-login {
-            display: none;
-        }
-    }
-
     .menu-icon {
-        margin: 0;
+        margin-right: -15px;
     }
 
     .mobil-menu-block {
@@ -791,6 +822,33 @@
 
     .apf-sub {
         width: 100%;
+    }
+
+    .apg-mob-over {
+        overflow-x: scroll;
+    }
+
+    .apg-mob {
+        min-width: 520px;
+    }
+
+    .apg-right {
+        padding-left: 0;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+
+        .apg-col-big {
+            width: 100%;
+            margin: 8px 0 0 0;
+        }
+    }
+
+    .drag-icon-block {
+        display: none;
+    }
+
+    .apg-title {
+        font-size: 12px;
     }
 
 }
