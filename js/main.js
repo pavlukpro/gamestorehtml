@@ -63,6 +63,11 @@ jQuery( document ).ready(function($){
     });
 
 // --------------------------------------------------------------------------------------------------------------
+    $(".apl-arrow").click(function () {
+        $(this).parent().parent().toggleClass('open');
+    });
+
+// --------------------------------------------------------------------------------------------------------------
     $(".head-flex .user-flex").click(function() {
         $('.head-flex .user-list').slideToggle(300);
         $('.head-flex .user-block').toggleClass('open');
