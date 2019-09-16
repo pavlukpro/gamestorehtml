@@ -20,23 +20,34 @@
 
 <div id="site">
     <div class="mobil-menu-block">
-        <span class="close-menu"></span>
-        <ul class="nav-menu">
-            <li><a href="/">King of Avalon</a></li>
-            <li><a href="/">Guns of Glory</a></li>
-            <li><a href="/">Z-Day</a></li>
-            <li><a href="/">How to buy</a></li>
-            <li><a href="/">How to sell</a></li>
-            <li><a href="/">Order selection</a></li>
-            <li><a href="/">Quick buyback</a></li>
-            <li><a href="/">FAQ</a></li>
-            <li><a href="/">Contacts</a></li>
-        </ul>
-        <div class="head-btn-block">
-            <button class="head-btn btn-blue">How to buy</button>
-            <button class="head-btn btn-green">How to sell</button>
+        <div>
+            <div class="user-block">
+                <div class="user-flex">
+                    <div class="ub-pic"><img src="images/ub-pic.png" height="43" width="43" alt=""/></div>
+                    <div class="ub-cont">
+                        <div class="ub-name">Andrew Pavluk</div>
+                    </div>
+                </div>
+                <div class="user-list-mob">
+                    <ul>
+                        <li><a href="/">Profile</a></li>
+                        <li><a href="/">Agent</a></li>
+                        <li><a href="/">Referal products</a></li>
+                        <li><a href="/">My products</a></li>
+                        <li><a href="/">Favorite</a></li>
+                        <li><a href="/">Exit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">How to buy</a></li>
+                <li><a href="/">How to sell</a></li>
+                <li><a href="/">Order selection</a></li>
+                <li><a href="/">Quick buyback</a></li>
+                <li><a href="/">FAQ</a></li>
+                <li><a href="/">Contacts</a></li>
+            </ul>
         </div>
-        <button class="btn-login">Login</button>
     </div>
     <header class="header">
         <div class="fixed">
@@ -64,11 +75,20 @@
                     </ul>
                 </div>
                 <div class="user-block">
-                    <div class="ub-pic"><img src="images/ub-pic.png" height="43" width="43" alt=""/></div>
-                    <div class="ub-cont">
-                        <div class="ub-name">Andrew Pavluk</div>
-                        <div class="ub-exit"><a href="/">Exit</a></div>
+                    <div class="user-flex">
+                        <div class="ub-pic"><img src="images/ub-pic.png" height="43" width="43" alt=""/></div>
+                        <div class="ub-cont">
+                            <div class="ub-name">Andrew Pavluk</div>
+                        </div>
                     </div>
+                    <ul class="user-list">
+                        <li><a href="/">Profile</a></li>
+                        <li><a href="/">Agent</a></li>
+                        <li><a href="/">Referal products</a></li>
+                        <li><a href="/">My products</a></li>
+                        <li><a href="/">Favorite</a></li>
+                        <li><a href="/">Exit</a></li>
+                    </ul>
                 </div>
                 <div class="dop-menu">
                     <ul>
@@ -84,139 +104,141 @@
         </div>
     </header>
     <div class="fixed">
-        <div class="ap-flex">
-            <div class="ap-sidebar">
-                <div class="apm-btn">menu</div>
-                <div class="ap-menu-block">
-                    <ul class="ap-menu">
-                        <li class="active" ><a href="#">Orders</a></li>
-                        <li><a href="#">Users</a></li>
-                        <li><a href="#">Objects</a></li>
-                        <li>
-                            <a href="#">Games</a>
-                            <ul>
-                                <li><a href="#">King of Avalon</a></li>
-                                <li><a href="#">Guns of Glory</a></li>
-                                <li><a href="#">Z-Day</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Exit</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ap-cont-block">
-                <div class="ap-cont">
-                    <div class="ap-title-block">
-                        <h3 class="ap-title-page">orders</h3>
-                    </div>
-                    <div class="ap-filter-block">
-                        <div class="apf-select">
-                            <label class="apf-label">status</label>
-                            <select class="select">
-                                <option>Options</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div class="apf-select">
-                            <label class="apf-label">user</label>
-                            <select class="select">
-                                <option>Options</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div class="apf-search-block">
-                            <input class="apf-search" type="text" placeholder="Search..">
-                            <button class="apf-search-sub" type="submit"><span class="icon-search"></span></button>
-                        </div>
-                        <input class="apf-sub" type="submit" value="apply">
-                    </div>
-                    <div class="ap-table">
-                        <table>
-                            <tr>
-                                <th>ID</th>
-                                <th>Product</th>
-                                <th>User</th>
-                                <th>Price</th>
-                                <th>Status</th>
-                                <th>Date</th>
-                                <th>Action</th>
-                            </tr>
-                            <tr>
-                                <td class="apt-id">10</td>
-                                <td class="apt-primary">
-                                    <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
-                                    <button class="toggle-row"></button>
-                                </td>
-                                <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
-                                <td class="apt-toggle" data-colname="Price">2000$</td>
-                                <td class="apt-toggle" data-colname="Status">New</td>
-                                <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
-                                <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
-                            </tr>
-                            <tr>
-                                <td class="apt-id">11</td>
-                                <td class="apt-primary">
-                                    <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
-                                    <button class="toggle-row"></button>
-                                </td>
-                                <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
-                                <td class="apt-toggle" data-colname="Price">2000$</td>
-                                <td class="apt-toggle" data-colname="Status">New</td>
-                                <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
-                                <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
-                            </tr>
-                            <tr>
-                                <td class="apt-id">12</td>
-                                <td class="apt-primary">
-                                    <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
-                                    <button class="toggle-row"></button>
-                                </td>
-                                <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
-                                <td class="apt-toggle" data-colname="Price">2000$</td>
-                                <td class="apt-toggle" data-colname="Status">New</td>
-                                <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
-                                <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
-                            </tr>
-                            <tr>
-                                <td class="apt-id">13</td>
-                                <td class="apt-primary">
-                                    <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
-                                    <button class="toggle-row"></button>
-                                </td>
-                                <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
-                                <td class="apt-toggle" data-colname="Price">2000$</td>
-                                <td class="apt-toggle" data-colname="Status">New</td>
-                                <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
-                                <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
-                            </tr>
-                            <tr>
-                                <td class="apt-id">14</td>
-                                <td class="apt-primary">
-                                    <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
-                                    <button class="toggle-row"></button>
-                                </td>
-                                <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
-                                <td class="apt-toggle" data-colname="Price">2000$</td>
-                                <td class="apt-toggle" data-colname="Status">New</td>
-                                <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
-                                <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
-                            </tr>
-                        </table>
+        <div class="content-2">
+            <div class="ap-flex">
+                <div class="ap-sidebar">
+                    <div class="apm-btn">menu</div>
+                    <div class="ap-menu-block">
+                        <ul class="ap-menu">
+                            <li class="active" ><a href="#">Orders</a></li>
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Objects</a></li>
+                            <li>
+                                <a href="#">Games</a>
+                                <ul>
+                                    <li><a href="#">King of Avalon</a></li>
+                                    <li><a href="#">Guns of Glory</a></li>
+                                    <li><a href="#">Z-Day</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Exit</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="nav-links">
-                    <a class="prev page-numbers" href="/"><span class="icon-cheveron-left"></span></a>
-                    <span aria-current="page" class="page-numbers current">1</span>
-                    <a class="page-numbers" href="/">2</a>
-                    <a class="page-numbers" href="/">3</a>
-                    <a class="page-numbers" href="/">4</a>
-                    <a class="page-numbers" href="/">5</a>
-                    <a class="next page-numbers" href="/"><span class="icon-cheveron-right"></span></a>
+                <div class="ap-cont-block">
+                    <div class="ap-cont">
+                        <div class="ap-title-block">
+                            <h3 class="ap-title-page">orders</h3>
+                        </div>
+                        <div class="ap-filter-block">
+                            <div class="apf-select">
+                                <label class="apf-label">status</label>
+                                <select class="select">
+                                    <option>Options</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="apf-select">
+                                <label class="apf-label">user</label>
+                                <select class="select">
+                                    <option>Options</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="apf-search-block">
+                                <input class="apf-search" type="text" placeholder="Search..">
+                                <button class="apf-search-sub" type="submit"><span class="icon-search"></span></button>
+                            </div>
+                            <input class="apf-sub" type="submit" value="apply">
+                        </div>
+                        <div class="ap-table">
+                            <table>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Product</th>
+                                    <th>User</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td class="apt-id">10</td>
+                                    <td class="apt-primary">
+                                        <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
+                                        <button class="toggle-row"></button>
+                                    </td>
+                                    <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
+                                    <td class="apt-toggle" data-colname="Price">2000$</td>
+                                    <td class="apt-toggle" data-colname="Status">New</td>
+                                    <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
+                                    <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="apt-id">11</td>
+                                    <td class="apt-primary">
+                                        <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
+                                        <button class="toggle-row"></button>
+                                    </td>
+                                    <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
+                                    <td class="apt-toggle" data-colname="Price">2000$</td>
+                                    <td class="apt-toggle" data-colname="Status">New</td>
+                                    <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
+                                    <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="apt-id">12</td>
+                                    <td class="apt-primary">
+                                        <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
+                                        <button class="toggle-row"></button>
+                                    </td>
+                                    <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
+                                    <td class="apt-toggle" data-colname="Price">2000$</td>
+                                    <td class="apt-toggle" data-colname="Status">New</td>
+                                    <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
+                                    <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="apt-id">13</td>
+                                    <td class="apt-primary">
+                                        <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
+                                        <button class="toggle-row"></button>
+                                    </td>
+                                    <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
+                                    <td class="apt-toggle" data-colname="Price">2000$</td>
+                                    <td class="apt-toggle" data-colname="Status">New</td>
+                                    <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
+                                    <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="apt-id">14</td>
+                                    <td class="apt-primary">
+                                        <div>Z-Day. Food: 100m, Wood: 100m, Iron: 20m. Silver: 10m</div>
+                                        <button class="toggle-row"></button>
+                                    </td>
+                                    <td class="apt-toggle" data-colname="User">Andrew Pavluk</td>
+                                    <td class="apt-toggle" data-colname="Price">2000$</td>
+                                    <td class="apt-toggle" data-colname="Status">New</td>
+                                    <td class="apt-toggle" data-colname="Date">12.03.19 23:00</td>
+                                    <td class="apt-toggle"><button class="btn-blue btn-small">edit</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="nav-links">
+                        <a class="prev page-numbers" href="/"><span class="icon-cheveron-left"></span></a>
+                        <span aria-current="page" class="page-numbers current">1</span>
+                        <a class="page-numbers" href="/">2</a>
+                        <a class="page-numbers" href="/">3</a>
+                        <a class="page-numbers" href="/">4</a>
+                        <a class="page-numbers" href="/">5</a>
+                        <a class="next page-numbers" href="/"><span class="icon-cheveron-right"></span></a>
+                    </div>
                 </div>
             </div>
         </div>

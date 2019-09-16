@@ -13,11 +13,7 @@ jQuery( document ).ready(function($){
 
 //Меню в мобильной версии -----------------------------------------------------------------------------------------
     $(".menu-icon").click(function () {
-        $("#site").addClass('open-menu');
-    });
-
-    $(".close-menu").click(function () {
-        $("#site").removeClass('open-menu');
+        $("#site").toggleClass('open-menu');
     });
     
 // --------------------------------------------------------------------------------------------------------------
@@ -64,6 +60,42 @@ jQuery( document ).ready(function($){
 // --------------------------------------------------------------------------------------------------------------
     $(".toggle-row").click(function () {
         $(this).parent().parent().toggleClass('open');
+    });
+
+// --------------------------------------------------------------------------------------------------------------
+    $(".apl-arrow").click(function () {
+        $(this).parent().parent().toggleClass('open');
+    });
+
+// --------------------------------------------------------------------------------------------------------------
+    $(".head-flex .user-flex").click(function() {
+        $('.head-flex .user-list').slideToggle(300);
+        $('.head-flex .user-block').toggleClass('open');
+    });
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".head-flex .user-block").length) {
+            $('.head-flex .user-list').hide();
+            $('.head-flex .user-block').removeClass('open');
+        }
+        e.stopPropagation();
+    });
+
+    $(".mobil-menu-block .user-flex").click(function() {
+        $('.mobil-menu-block .user-list-mob').slideToggle(300);
+        $('.mobil-menu-block .user-block').toggleClass('open');
+    });
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".mobil-menu-block .user-block").length) {
+            $('.mobil-menu-block .user-list-mob').hide();
+            $('.mobil-menu-block .user-block').removeClass('open');
+        }
+        e.stopPropagation();
+    });
+
+// --------------------------------------------------------------------------------------------------------------
+    $(".apg-toggle").click(function () {
+        $(this).parent().toggleClass('open');
+        $(this).parent().parent().find('.apg-cont').slideToggle();
     });
 
 });//конец ready
