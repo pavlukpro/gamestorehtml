@@ -18,12 +18,36 @@
     .apf-av {
         width: 160px;
     }
+    .apg-col-big {
+        width: 208px;
+    }
+    .step-list li {
+        width: 190px;
+    }
 }
 
 @include media(1024) {
     .fixed {
         width: 720px;
     }
+
+    .head-flex {
+        min-height: 70px;
+    }
+
+    .head-flex {
+        .head-btn-block, .btn-login {
+            display: none;
+        }
+    }
+
+    .menu-icon {
+        width: 75px;
+        height: 73px;
+        border-radius: 0px;
+        margin: 0;
+    }
+
     .nav {
         display: none;
     }
@@ -274,8 +298,20 @@
             margin-right: 3%;
         }
 
+        .apf-select.apf-select-big {
+            margin-right: 0;
+        }
+
         .apf-sub {
             width: 185px;
+        }
+    }
+
+    .ap-filter-block.mar {
+        justify-content: space-between;
+
+        .apf-search-block {
+            margin-right: 0;
         }
     }
 
@@ -317,6 +353,53 @@
         }
     }
 
+    .head-flex .user-block {
+        display: none;
+    }
+
+    .apg-right {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 33px;
+        justify-content: space-between;
+
+        .apg-col-big {
+            width: 48.5%;
+            margin: 8px 0 5px 0;
+        }
+    }
+
+    .ap-filter-block .apf-fl-st .apf-select {
+        width: 312.5px;
+        margin-right: 6px;
+    }
+
+    .table-logs table td:first-child {
+        width: 30%;
+    }
+
+    .aps-flex {
+        justify-content: space-between;
+    }
+
+    .ac-flex {
+        justify-content: space-between;
+    }
+
+    .ac-item {
+        width: 48%;
+        margin: 0 0 15px 0;
+    }
+
+    .step-list li {
+        width: 230px;
+    }
+
+    .step-list li:nth-child(4):after {
+        display: none;
+    }
+
+
 }
 
 @include media(768) {
@@ -325,14 +408,8 @@
         margin: 0 15px;
     }
 
-    .head-flex {
-        .head-btn-block, .btn-login {
-            display: none;
-        }
-    }
-
     .menu-icon {
-        margin: 0;
+        margin-right: -15px;
     }
 
     .mobil-menu-block {
@@ -792,6 +869,293 @@
     .apf-sub {
         width: 100%;
     }
+
+    .apg-mob-over {
+        overflow-x: scroll;
+    }
+
+    .apg-mob {
+        min-width: 520px;
+    }
+
+    .apg-right {
+        padding-left: 0;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+
+        .apg-col-big {
+            width: 100%;
+            margin: 8px 0 0 0;
+        }
+    }
+
+    .drag-icon-block {
+        display: none;
+    }
+
+    .apg-title {
+        font-size: 12px;
+    }
+
+    .ap-filter-block .apf-fl-st .apf-select, .apf-fl-st {
+        width: 100%;
+    }
+
+    .apf-fl-st .apt-btn {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .table-logs table tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding-bottom: 10px;
+
+        &:first-child {
+            padding-bottom: 0;
+        }
+
+        th {
+            display: none;
+            box-sizing: border-box;
+
+            &:first-child {
+                display: block;
+            }
+
+            &:last-child {
+                display: block;
+                width: 128px;
+                padding-left: 0;
+            }
+        }
+
+        td {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:first-child {
+                display: block;
+                box-sizing: border-box;
+                padding-right: 140px;
+                width: 100%;
+            }
+
+            &.apl-toggle {
+                display: none;
+                padding: 10px;
+                margin-bottom: 4px;
+
+                &:before {
+                    display: block;
+                    content: attr(data-colname);
+                }
+
+                &:nth-child(even) {
+                    background:#141522;
+                    border-radius: 4px;
+                }
+            }
+
+            &.apl-time {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding-left: 0;
+                padding-right: 20px;
+                width: 128px;
+            }
+        }
+
+        &.open td.apl-toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .apl-arrow {
+            display: block;
+        }
+
+        &.open td.apl-toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .aps-flex {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .aps-label {
+        display: block;
+        width: auto;
+        margin: 0 0 6px 0;
+    }
+
+    .aps-field {
+        width: 100%;
+    }
+
+    .apt-btn-block .btn-small {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ap-user-table table  {
+
+        tr {
+            display: block;
+            padding: 20px 0;
+
+            &:first-child {
+                padding: 0;
+            }
+        }
+
+        th {
+            display: none;
+        }
+
+        td, td:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 12px;
+            box-sizing: border-box;
+            width: 100%;
+
+            &:first-child {
+                padding-left: 12px;
+            }
+
+            &:nth-child(odd) {
+                background: #151726;
+                border-radius: 4px;
+            }
+
+            &:before {
+                display: block;
+                content: attr(data-colname);
+                font: 300 12px/130% $font_main;
+                color:$color_main;
+            }
+
+            &:last-child {
+                padding: 0;
+                background: none;
+            }
+
+            .btn-small {
+                border: 1px solid #FFFFFF;
+                background: none;
+                width: 100%;
+                box-shadow: none;
+
+                &:hover, &:active {
+                    background: #fff;
+                    color: #000000;
+                }
+
+            }
+
+        }
+    }
+
+    .ac-top {
+        padding: 1px 14px 10px 14px;
+        display: block;
+    }
+
+    .act-cont {
+        display: block;
+        text-align: center;
+    }
+
+    .act-pic {
+        margin: 0 auto 20px auto;
+    }
+
+    .act-btn-block {
+        .apt-btn {
+            width: 100%;
+        }
+    }
+
+    .ac-item {
+        width: 100%;
+    }
+
+    .ac-title {
+        text-align: center;
+    }
+
+    .step-list {
+        display: block;
+
+        li {
+            margin: 30px auto 70px auto;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .ac-ava {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .ac-flex-st {
+        display: block;
+    }
+
+    .ac-ava-btn {
+
+        button {
+            width: 100%;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid #FFFFFF;
+            font: 500 12px/130% $font_main;
+            color:$color_main;
+            text-transform: uppercase;
+
+            &:hover {
+                background: #FFFFFF;
+                color: #000000;
+            }
+
+            &.ac-ava-del {
+                background: #FF1617;
+                border-color: #FF1617;
+
+                &:hover {
+                    background: #FF1617;
+                    color: $color_main;
+                    box-shadow: 0px 10px 20px rgba(255, 22, 23, 0.24);
+                }
+            }
+
+            b {
+                display: block;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
 
 }
 
