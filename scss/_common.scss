@@ -2521,6 +2521,32 @@ body {
 
 /*------------------------------------------------------------------*/
 
+.acount-block {
+
+    .ap-sidebar {
+        padding: 0;
+    }
+
+    .ap-menu > li {
+        margin: 0;
+        border-radius: 0;
+        border-top: 1px solid #2E2F44;
+
+        &:first-child {
+            border-radius: 5px 5px 0 0;
+            border-top: none;
+        }
+
+        &:last-child {
+            border-radius: 0 0 5px 5px;
+        }
+    }
+
+    .ap-cont {
+        background: rgba(31, 32, 53, 0.87);
+    }
+}
+
 .ac-top {
     margin-bottom: 16px;
     padding: 0 32px;
@@ -2581,6 +2607,7 @@ body {
 .ac-item {
     width: 275px;
     margin: 0 30px 15px 0;
+    position: relative;
 }
 
 .ac-title {
@@ -2765,5 +2792,33 @@ body {
         background:#0F9714;
         box-shadow: none;
     }
+}
+
+.ac-warning {
+    font: 14px/130% $font_main;
+    color:#fd1717;
+    position: absolute;
+    left: 100%;
+    bottom: 14px;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+
+.apt-btn-small {
+    text-transform: none;
+}
+
+.service-text {
+    margin-right: 30px;
+    font: 14px/130% $font_main;
+    color:$color_main;
+}
+
+.ac-check-email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 

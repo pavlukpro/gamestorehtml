@@ -2593,6 +2593,29 @@ body {
 }
 
 /*------------------------------------------------------------------*/
+.acount-block .ap-sidebar {
+	padding: 0;
+}
+
+.acount-block .ap-menu > li {
+	margin: 0;
+	border-radius: 0;
+	border-top: 1px solid #2E2F44;
+}
+
+.acount-block .ap-menu > li:first-child {
+	border-radius: 5px 5px 0 0;
+	border-top: none;
+}
+
+.acount-block .ap-menu > li:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+.acount-block .ap-cont {
+	background: rgba(31, 32, 53, 0.87);
+}
+
 .ac-top {
 	margin-bottom: 16px;
 	padding: 0 32px;
@@ -2653,6 +2676,7 @@ body {
 .ac-item {
 	width: 275px;
 	margin: 0 30px 15px 0;
+	position: relative;
 }
 
 .ac-title {
@@ -2828,6 +2852,34 @@ body {
 .apf-sub-green:active {
 	background: #0F9714;
 	box-shadow: none;
+}
+
+.ac-warning {
+	font: 14px/130% "Montserrat", sans-serif;
+	color: #fd1717;
+	position: absolute;
+	left: 100%;
+	bottom: 14px;
+	margin-left: 30px;
+	white-space: nowrap;
+}
+
+.apt-btn-small {
+	text-transform: none;
+}
+
+.service-text {
+	margin-right: 30px;
+	font: 14px/130% "Montserrat", sans-serif;
+	color: #ffffff;
+}
+
+.ac-check-email {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -3149,6 +3201,15 @@ body {
 	}
 	.step-list li:nth-child(4):after {
 		display: none;
+	}
+	.acount-block .ap-sidebar {
+		padding: 0 30px;
+	}
+	.acount-block .ap-menu > li {
+		border-top: none;
+	}
+	.acount-block .ap-menu > li:first-child, .acount-block .ap-menu > li:last-child {
+		border-radius: 0;
 	}
 }
 
@@ -3741,6 +3802,26 @@ body {
 	}
 	.ac-ava-btn button span {
 		display: none;
+	}
+	.acount-block .ap-sidebar {
+		padding: 0;
+	}
+	.ac-warning {
+		left: auto;
+		right: 0;
+		top: 0;
+		bottom: auto;
+		margin-left: 0;
+	}
+	.ac-check-email {
+		display: block;
+	}
+	.ac-check-email .service-text {
+		margin: 0 0 20px 0;
+		text-align: center;
+	}
+	.ac-check-email .apt-btn {
+		width: 100%;
 	}
 }
 
