@@ -399,6 +399,22 @@
         display: none;
     }
 
+    .acount-block  {
+
+        .ap-sidebar {
+            padding: 0 30px;
+        }
+
+        .ap-menu > li {
+            border-top: none;
+
+            &:first-child, &:last-child {
+                border-radius:0;
+            }
+        }
+    }
+
+
 
 }
 
@@ -1153,6 +1169,34 @@
             span {
                 display: none;
             }
+        }
+    }
+
+    .acount-block {
+
+        .ap-sidebar {
+            padding: 0;
+        }
+    }
+
+    .ac-warning {
+        left: auto;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        margin-left: 0;
+    }
+
+    .ac-check-email {
+        display: block;
+
+        .service-text {
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+
+        .apt-btn {
+            width: 100%;
         }
     }
 
