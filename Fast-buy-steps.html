@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Home page</title>
+    <title></title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="scss/style.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/menu-accordion.js"></script>
@@ -18,8 +18,12 @@
 </head>
 <body>
 	<div id="site">
-        <div class="mobil-menu-block">
-            <ul class="nav-menu">
+		<div class="mobil-menu-block">
+			<span class="close-menu"></span>
+			<ul class="nav-menu">
+                <li><a href="/">King of Avalon</a></li>
+                <li><a href="/">Guns of Glory</a></li>
+                <li><a href="/">Z-Day</a></li>
                 <li><a href="/">How to buy</a></li>
                 <li><a href="/">How to sell</a></li>
                 <li><a href="/">Order selection</a></li>
@@ -27,6 +31,10 @@
                 <li><a href="/">FAQ</a></li>
                 <li><a href="/">Contacts</a></li>
             </ul>
+            <div class="head-btn-block">
+                <button class="head-btn btn-blue">How to buy</button>
+                <button class="head-btn btn-green">How to sell</button>
+            </div>
             <button class="btn-login">Login</button>
         </div>
         <header class="header">
@@ -72,90 +80,144 @@
                 </div>
             </div>
         </header>
-        <div class="content">
-            <div class="fixed">
-                <h3 class="gen-title">SECURE <span>PLAYER-TO-PLAYER</span> MARKETPLACE</h3>
-                <div class="gen-text">Here you can</div>
-                <div class="possibilities-flex">
-                    <div class="possibilities-item">
-                        <div class="possibilities-icon"><span class="icon-shield"></span></div>
-                        Safely buy or sell an account
-                    </div>
-                    <div class="possibilities-item">
-                        <div class="possibilities-icon"><span class="icon-chart"></span></div>
-                        Buy resources for growth
-                    </div>
-                    <div class="possibilities-item">
-                        <div class="possibilities-icon"><span class="icon-concept"></span></div>
-                        Buy unique guides with game secrets
-                    </div>
-                </div>
-                <div class="gen-game-title"><span>Choose your game</span></div>
-                <div class="gen-game-block">
-                    <a href="/" class="gen-game" style="background-image: url('images/gf-pic_1.png')">
-                        <span class="gen-flex">
-                            <span class="gf-title">King of Avalon</span>
-                            <button class="gf-btn">Show shop</button>
-                        </span>
-                    </a>
-                    <a href="/" class="gen-game" style="background-image: url('images/gf-pic_2.png')">
-                        <span class="gen-flex">
-                            <span class="gf-title">Guns of Glory</span>
-                            <button class="gf-btn">Show shop</button>
-                        </span>
-                    </a>
-                    <a href="/" class="gen-game" style="background-image: url('images/gf-pic_3.png')">
-                        <span class="gen-flex">
-                            <span class="gf-title">Z-Day</span>
-                            <button class="gf-btn">Show shop</button>
-                        </span>
-                    </a>
-                </div>
+		<div class="fixed pageContent_wrapper">
+			<div class="pageContent">
+				<div class="pageContent_row">
+					<div class="ap-cont pageBlock bg-filled">
+						<div class="pageBlock_section-start">
+							<div class="pageContent_title">Fast buy</div>
+							<div class="separator-vertical"></div>
+							<p class="pageBlock_explain">Fill out as much information as possible about your game account. <br/> The more information - the faster the deal</p>
+						</div>
+						<div class="separator separator-light"></div>
+						<div class="select_container">
+							<div class="btnLined_container">
+								<a class="btnLined btnLined-active" href="">King of Avalon</a>
+								<a class="btnLined" href="">Guns of Glory</a>
+								<a class="btnLined" href="">Z-Day</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+                		
+<!--Steps-->
 
-                <h3 class="title">Join to our community</h3>
-                <div class="join-flex">
-                    <div class="jf-item">
-                        <div class="jf-title">SELLER</div>
-                        <ul class="jf-list">
-                            <li>Free Registration</li>
-                            <li>More than 250 games</li>
-                            <li>Trade Conﬁdently & Securely</li>
-                            <li>Make a Difference</li>
-                        </ul>
-                        <a class="jf-btn btn-green" href="/">register now</a>
-                    </div>
-                    <div class="jf-item-center">
-                        <h3 class="jf-title">You</h3>
-                        <div class="jf-or">or</div>
-                    </div>
-                    <div class="jf-item">
-                        <div class="jf-title">BUYER</div>
-                        <ul class="jf-list">
-                            <li>Free Registration</li>
-                            <li>More than 250 games</li>
-                            <li>Trade Conﬁdently & Securely</li>
-                            <li>Make a Difference</li>
-                        </ul>
-                        <a class="jf-btn btn-blue" href="/">register now</a>
-                    </div>
-                </div>
+         			<div class="pageContent_row">
+         				<div class="pageBlock bg-filled pageBlock_steps">
+         					<div class="pageBlock_title__container">
+         						<div class="pageBlock_title">STEPS</div>
+         					</div>
+         					<div class="separator separator-light"></div>
+         					<div class="step_container">
+         						<div class="step step-active">
+         							<div class="step_num">STEP 1</div>
+         							<div class="step_dot__container">
+         								<div class="step_dot"></div>
+         								<div class="step_dot__line"></div>
+         							</div>
+         							<div class="step_title">MAIN SETTING</div>
+         						</div>
+         						<div class="step">
+         							<div class="step_num">STEP 2</div>
+         							<div class="step_dot__container">
+         								<div class="step_dot"></div>
+         								<div class="step_dot__line"></div>
+         							</div>
+         							<div class="step_title">PRIMARY ACCOUNT</div>
+         						</div>
+         						<div class="step">
+         							<div class="step_num">STEP 3</div>
+         							<div class="step_dot__container">
+         								<div class="step_dot"></div>
+         								<div class="step_dot__line"></div>
+         							</div>
+         							<div class="step_title">PROPERTY PRICE</div>
+         						</div>
+         						<div class="step">
+         							<div class="step_num">STEP 4</div>
+         							<div class="step_dot__container">
+         								<div class="step_dot"></div>
+         								<div class="step_dot__line"></div>
+         							</div>
+         							<div class="step_title">ACCOUNT SETINGS</div>
+         						</div>
+         					</div>
+         				</div>
+         			</div>
+         			
+<!--Step 1-->
 
-                <h3 class="title">PlayerGuardian <span>Buyer</span> Protections</h3>
-                <div class="text-center">PlayerAuctions is the most secure place to buy and sell MMO game assets. Our proprietary security technology, PlayerGuardian, keeps you, your  payments, and your trades protected and private. The protections below are provided to all PlayerAuctions buyers.</div>
-                <ul class="protection-list">
-                    <li>Guaranteed Payment Security</li>
-                    <li>Convenient & Worry-Free Trading</li>
-                    <li>Convenient & Worry-Free Trading</li>
-                    <li>Guaranteed Full and As-Described Delivery, or Your Money Back</li>
-                    <li>Guaranteed Full and As-Described Delivery, or Your Money Back</li>
-                    <li>Guaranteed Full and As-Described Delivery, or Your Money Back</li>
-                    <li>PlayerAuctions After Sale 100%</li>
-                    <li>Transparent Seller Service Ratings</li>
-                    <li>Transparent Seller Service Ratings</li>
-                </ul>
-            </div>
-        </div>
-        <footer class="footer">
+					<div class="pageContent_row">
+						<div class="pageBlock bg-filled pageBlock_step1">
+							<div class="pageBlock_title__container">
+								<div class="pageBlock_title">STEP 1. MAIN SETTINGS</div>
+							</div>
+							<div class="pageBlock_section">
+								<div class="pageBlock_item">
+									<label for="" class="item_label">SERVER NAME</label>
+									<div class="dropdown pageBlock_step1__dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Select server</div>
+									</div>
+								</div>
+								<div class="pageBlock_item">
+									<label for="" class="item_label">Account type</label>
+									<div class="radioBox_container section-row">
+										<label class="radioBox">
+											<input class="radioBox_input" type="radio" name="accountType" checked>
+											<span class="radioBox_title">General</span>
+										</label>
+											
+										<label class="radioBox">
+											<input class="radioBox_input" type="radio" name="accountType">
+											<span class="radioBox_title">Farm</span>
+										</label>
+									</div>
+								</div>
+								<div class="pageBlock_item">
+									<label for="" class="item_label">castle level</label>
+									<div class="dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Select</div>
+									</div>
+								</div>
+								<div class="pageBlock_item">
+									<label for="" class="item_label">dragon level</label>
+									<div class="dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Select</div>
+									</div>
+							 	</div>
+							</div>
+							<div class="separator separator-lighter"></div>
+							<div class="pageBlock_section">
+								<div class="section-row">
+									<div class="section_col mgr30">
+										<label for="" class="item_label">POWER ACCOUNT</label>
+										<div class="input-evaluated">
+									   		<input placeholder="0" type="text">
+									   		<label for="">mln</label>
+										</div>
+							  		</div>
+							  		<div class="section_col">
+										<label for="" class="item_label">DONATION ACCOUNT</label>
+										<div class="input-evaluated">
+									   		<input placeholder="Enter amount" type="text">
+										  	<label for="">$</label>
+									   	</div>
+									</div>
+								</div>
+								<div class="step_btn__container">
+								   <a href="" class="btn step_btn">PREV STEP</a>
+								   <a href="" class="btn step_btn btn-blue">NEXT STEP</a>
+								</div>
+							</div>
+						</div>
+					</div>
+<!--Step 2-->
+			</div>
+		</div>
+		<footer class="footer">
             <div class="fixed">
                 <div class="footer-block">
                     <div class="footer-flex">
@@ -213,9 +275,7 @@
                     <div class="copyright">Copyright 2000-2019. All rights reserved</div>
                 </div>
             </div>
-		</footer>
-    </div>
-			
-	
+        </footer>
+	</div>
 </body>
 </html>
