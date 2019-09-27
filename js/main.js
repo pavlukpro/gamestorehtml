@@ -1,5 +1,5 @@
 jQuery( document ).ready(function($){
-
+var siteWidth = $('#site')[0].getBoundingClientRect().width;
 // --------------------------------------------------------------------------------------------------------------
     $(".faq-title").click(function () {
         if (!$(this).hasClass('active')) {
@@ -97,5 +97,15 @@ jQuery( document ).ready(function($){
         $(this).parent().toggleClass('open');
         $(this).parent().parent().find('.apg-cont').slideToggle();
     });
-
+// _________________________________________________________________________________________________________________
+	if (siteWidth <= 1200) {
+		$('.pageBlock_section-fastBuy > .pageBlock_item > .pageBlock_title-smaller').click(function(){
+			$(this).parent().toggleClass('active');
+		})
+	}
+	if (siteWidth <= 768) {
+		$('.sm-accordeons .pageBlock_title-smaller').click(function(){
+			$(this).parent().toggleClass('active');
+		})
+	}
 });//конец ready

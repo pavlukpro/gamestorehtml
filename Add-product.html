@@ -91,12 +91,20 @@
 						<div class="pageContent_title">Add product</div>
 						<div class="separator separator-light"></div>
 						<div class="select_container">
-							<div class="btnLined_container">
+							<div class="btnLined_container sm-hide">
 								<a class="btnLined btnLined-active" href="">King of Avalon</a>
 								<a class="btnLined" href="">Guns of Glory</a>
 								<a class="btnLined" href="">Z-Day</a>
 							</div>
+							<div class="pageBlock_item sm-show">
+								<label for="" class="item_label">Select game</label>
+								<div class="dropdown">
+									<div class="dropdown_arrow"></div>
+									<div class="dropdown_item">King of Alavon</div>
+								</div>
+							</div>
 						</div>
+						
 					</div>
 				</div>	
                 		
@@ -224,11 +232,28 @@
 					.pageContent_row>.pageBlock.bg-filled>(.pageBlock_title__container>.pageBlock_title{step 2. Primary account})+.separator.separator-lighter+(.pageBlock_section.pageBlock_section-cols05>(.pageBlock_item>.pageBlock_title{INFANTRY}+(.section-row>label.item_label{$ LVL}+.input-evaluated>input[placeholder=0]+label{K})*12)*4+(.pageBlock_item>.pageBlock_title{COMBAT EQUIPMENT}+.radioBox>input[name="accountType" type="radio"]+(.section-row>(.checkBox>input[type=checkbox]+label)+.dropdown>(.dropdown_arrow)+.dropdown_item)*5))+.separator.separator-lighter+.pageBlock_title{COMBAT PAREMETERS}+.pageBlock_section.pageBlock_section-cols04>(.pageBlock_item>(.section-row>label.item_label{ARMY SOMETHING}+(.pageBlock_item>.input-evaluated>input[value=0]+label{%}))*5)*4
 -->
 					<div class="pageContent_row">
-						<div class="pageBlock bg-filled">
-							<div class="pageBlock_title">step 2. Primary account</div>
+						<div class="pageBlock sm-accordeons bg-filled">
+							<div class="pageBlock_title__container">
+								<div class="pageBlock_title">step 2. Primary account</div>
+							</div>
 							<div class="separator separator-lighter"></div>
 							<div class="pageBlock_section pageBlock_section-cols05">
-								<div class="pageBlock_item">
+								<div class="pageBlock_item pageBlock_item-md">
+									<div class="pageBlock_title pageBlock_title-smaller">LVL</div>
+									<label class="item_label"><span>1</span></label>
+									<label class="item_label"><span>2</span></label>
+									<label class="item_label"><span>3</span></label>
+									<label class="item_label"><span>4</span></label>
+									<label class="item_label"><span>5</span></label>
+									<label class="item_label"><span>6</span></label>
+									<label class="item_label"><span>7</span></label>
+									<label class="item_label"><span>8</span></label>
+									<label class="item_label"><span>9</span></label>
+									<label class="item_label"><span>10</span></label>
+									<label class="item_label"><span>11</span></label>
+									<label class="item_label"><span>12</span></label>
+								</div>
+								<div class="pageBlock_item sm-accord active">
 									<div class="pageBlock_title pageBlock_title-smaller">INFANTRY</div>
 									<div class="section-row">
 										<label for="" class="item_label">1 LVL</label>
@@ -279,7 +304,7 @@
 										<div class="input-evaluated"><input type="text" placeholder="0"><label for="">K</label></div>
 									</div>
 								</div>
-								<div class="pageBlock_item">
+								<div class="pageBlock_item sm-accord">
 									<div class="pageBlock_title pageBlock_title-smaller">CAVALRY</div>
 									<div class="section-row">
 										<label for="" class="item_label">1 LVL</label>
@@ -330,7 +355,7 @@
 										<div class="input-evaluated"><input type="text" placeholder="0"><label for="">K</label></div>
 									</div>
 								</div>
-								<div class="pageBlock_item">
+								<div class="pageBlock_item sm-accord">
 									<div class="pageBlock_title pageBlock_title-smaller">ARCHERS</div>
 									<div class="section-row">
 										<label for="" class="item_label">1 LVL</label>
@@ -381,7 +406,7 @@
 										<div class="input-evaluated"><input type="text" placeholder="0"><label for="">K</label></div>
 									</div>
 								</div>
-								<div class="pageBlock_item">
+								<div class="pageBlock_item sm-accord">
 									<div class="pageBlock_title pageBlock_title-smaller">SIEGE TROOPS</div>
 									<div class="section-row">
 										<label for="" class="item_label">1 LVL</label>
@@ -432,8 +457,8 @@
 										<div class="input-evaluated"><input type="text" placeholder="0"><label for="">K</label></div>
 									</div>
 								</div>
-								<div class="pageBlock_item pageBlock_item-bigger">
-									<div class="pageBlock_title">COMBAT EQUIPMENT</div>
+								<div class="pageBlock_item-bigger sm-accord">
+									<div class="pageBlock_title pageBlock_title-smaller">COMBAT EQUIPMENT</div>
 									<div class="radioBox_container">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="accountType" checked>
@@ -444,6 +469,10 @@
 											<input class="radioBox_input" type="radio" name="accountType">
 											<span class="radioBox_title">Missing</span>
 										</label>
+									</div>
+									<div class="dropdown dropdown-md">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Select</div>
 									</div>
 									<div class="section-row">
 									  	<label class="checkBox">
@@ -498,10 +527,8 @@
 								</div>
 							</div>
 							<div class="separator separator-lighter"></div>
-							<div class="pageBlock_title__container">
-								<div class="pageBlock_title pageBlock_title-smaller">COMBAT PAREMETERS</div>
-							</div>
-							<div class="pageBlock_section pageBlock_section-cols04">
+							<div class="pageBlock_section sm-accord pageBlock_section-cols04 active">
+								<div class="pageBlock_title pageBlock_title-smaller">COMBAT PARAMETERS</div>
 								<div class="pageBlock_item">
 									<div class="section-row">
 										<label for="" class="item_label">ARMY ATTACK</label>
@@ -593,10 +620,8 @@
 							</div>
 							<div class="separator separator-lighter"></div>
 						 	<div class="pageBlock_section pageBlock_section-cols04 pageBlock_step2__03">
-								<div class="pageBlock_item">
-								  	<div class="pageBlock_title__container">
-								   		<div class="pageBlock_title pageBlock_title-smaller">AMOUNT OF RESOURCES</div>
-								  	</div>
+								<div class="pageBlock_item sm-accord active">
+									<div class="pageBlock_title pageBlock_title-smaller">AMOUNT OF RESOURCES</div>
 									<div class="section-row">
 										<label for="" class="item_label">FOOD</label>
 										<div class="input-evaluated"><input type="text" value="0"><label for="">min</label></div>
@@ -618,41 +643,40 @@
 										<div class="input-evaluated"><input type="text" value="0"><label for="">min</label></div>
 									</div>
 								</div>
-								<div class="pageBlock_item">
-								  	<div class="pageBlock_title__container">
-								   		<div class="pageBlock_title pageBlock_title-smaller">MAZE LEVEL</div>
-								  	</div>
-									<div class="section-row">
+								<div class="pageBlock_item sm-accord active">
+									<div class="pageBlock_title pageBlock_title-smaller">MAZE LEVEL</div>
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="mazeLevel" checked>
 											<span class="radioBox_title">from 0 to 5-10</span>
 										</label>
 									</div>
-									<div class="section-row">
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="mazeLevel">
 											<span class="radioBox_title">from 5-10 to 6-10</span>
 										</label>
 									</div>
-									<div class="section-row">
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="mazeLevel">
 											<span class="radioBox_title">from 6-10 to 7-10</span>
 										</label>
 									</div>
-									<div class="section-row">
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="mazeLevel">
 											<span class="radioBox_title">from 8-0 and above</span>
 										</label>
 									</div>
+									<div class="dropdown dropdown-md sm-hide">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">from 0 to 5-10</div>
+									</div>
 								</div>
-								<div class="pageBlock_item">
-								  	<div class="pageBlock_title__container">
-								   		<div class="pageBlock_title">EQUIPMENT DEVELOPMENT</div>
-								  	</div>
-									
-									<div class="radioBox_container">
+								<div class="pageBlock_item sm-accord active">
+									<div class="pageBlock_title pageBlock_title-smaller">EQUIPMENT DEVELOPMENT</div>
+									<div class="radioBox_container md-hide">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="accountType" checked>
 											<span class="radioBox_title">Is present</span>
@@ -662,6 +686,10 @@
 											<input class="radioBox_input" type="radio" name="accountType">
 											<span class="radioBox_title">Missing</span>
 										</label>
+									</div>
+									<div class="dropdown dropdown-md">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Is present</div>
 									</div>
 									<div class="section-row">
 									  	<label class="checkBox">
@@ -704,14 +732,14 @@
 						</div>
 					</div>
 				  	<div class="pageContent_row">
-						<div class="pageBlock bg-filled">
-							<div class="pageBlock_title">STEP 3. FARM</div>
+						<div class="pageBlock sm-accordeons bg-filled">
+							<div class="pageBlock_title__container">
+								<div class="pageBlock_title">STEP 3. FARM</div>
+							</div>
 							<div class="separator separator-lighter"></div>
 						 	<div class="pageBlock_section pageBlock_section-cols04 pageBlock_step2__03 pageBlock_farm">
-								<div class="pageBlock_item">
-								  	<div class="pageBlock_title__container">
-								   		<div class="pageBlock_title pageBlock_title-smaller">AMOUNT OF RESOURCES</div>
-								  	</div>
+								<div class="pageBlock_item sm-accord active">
+									<div class="pageBlock_title pageBlock_title-smaller">AMOUNT OF RESOURCES</div>
 									<div class="section-row">
 										<label for="" class="item_label">FOOD</label>
 										<div class="input-evaluated"><input type="text" value="0"><label for="">min</label></div>
@@ -733,41 +761,40 @@
 										<div class="input-evaluated"><input type="text" value="0"><label for="">min</label></div>
 									</div>
 								</div>
-								<div class="pageBlock_item">
-								  	<div class="pageBlock_title__container">
-								   		<div class="pageBlock_title pageBlock_title-smaller">MAZE LEVEL</div>
-								  	</div>
-									<div class="section-row">
+								<div class="pageBlock_item sm-accord active">
+									<div class="pageBlock_title pageBlock_title-smaller">MAZE LEVEL</div>
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
-											<input class="radioBox_input" type="radio" name="mazeLevel" checked>
+											<input class="radioBox_input" type="radio" name="mazeLevel" checked="">
 											<span class="radioBox_title">from 0 to 5-10</span>
 										</label>
 									</div>
-									<div class="section-row">
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="mazeLevel">
 											<span class="radioBox_title">from 5-10 to 6-10</span>
 										</label>
 									</div>
-									<div class="section-row">
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="mazeLevel">
 											<span class="radioBox_title">from 6-10 to 7-10</span>
 										</label>
 									</div>
-									<div class="section-row">
+									<div class="section-row md-hide sm-show">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="mazeLevel">
-											<span class="radioBox_title">from 8 to up</span>
+											<span class="radioBox_title">from 8-0 and above</span>
 										</label>
 									</div>
+									<div class="dropdown dropdown-md sm-hide">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">from 0 to 5-10</div>
+									</div>
 								</div>
-								<div class="pageBlock_item">
-								  	<div class="pageBlock_title__container">
-								   		<div class="pageBlock_title">EQUIPMENT DEVELOPMENT</div>
-								  	</div>
-									
-									<div class="radioBox_container">
+								<div class="pageBlock_item sm-accord active">
+									<div class="pageBlock_title pageBlock_title-smaller">EQUIPMENT DEVELOPMENT</div>
+									<div class="radioBox_container md-hide">
 										<label class="radioBox">
 											<input class="radioBox_input" type="radio" name="accountType" checked>
 											<span class="radioBox_title">Is present</span>
@@ -777,6 +804,10 @@
 											<input class="radioBox_input" type="radio" name="accountType">
 											<span class="radioBox_title">Missing</span>
 										</label>
+									</div>
+									<div class="dropdown dropdown-md">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Is present</div>
 									</div>
 									<div class="section-row">
 									  	<label class="checkBox">
@@ -826,7 +857,9 @@
 -->
 					<div class="pageContent_row">
 						<div class="pageBlock bg-filled">
-							<div class="pageBlock_title">STEP 3. PROPERTY PRICE</div>
+							<div class="pageBlock_title__container">
+								<div class="pageBlock_title">STEP 3. PROPERTY PRICE</div>
+							</div>
 							<div class="separator separator-lighter"></div>
 							<div class="pageBlock_section pageBlock_step3__01">
 								<div class="pageBlock_item mgr30">
@@ -855,7 +888,7 @@
 								</div>
 							</div>
 							<div class="separator separator-lighter"></div>
-							<div class="pageBlock_section pageBlock_section-equal">
+							<div class="pageBlock_section screen_section pageBlock_section-equal">
 								<div class="pageBlock_item mgr30">
 									<div class="item_label mgb10">PROPERTY DESCRITION</div>
 									<textarea name="" id="" cols="30" rows="10" class="bTextarea" placeholder="Enter text..."></textarea>
@@ -863,6 +896,18 @@
 								<div class="pageBlock_item">
 									<div class="item_label mgb10">SCREENSHOTS</div>
 									<div class="section-row screen_container">
+										<div class="screen">
+											<img src="images/screenshot-empty.png" alt="" class="screen_img">
+											<div class="screen_removal"></div>
+										</div>
+										<div class="screen">
+											<img src="images/screenshot-empty.png" alt="" class="screen_img">
+											<div class="screen_removal"></div>
+										</div>
+										<div class="screen">
+											<img src="images/screenshot-empty.png" alt="" class="screen_img">
+											<div class="screen_removal"></div>
+										</div>
 										<div class="screen">
 											<img src="images/screenshot-empty.png" alt="" class="screen_img">
 											<div class="screen_removal"></div>
@@ -927,7 +972,9 @@
 -->
 					<div class="pageContent_row">
 						<div class="pageBlock bg-filled pageBlock_step4">
-							<div class="pageBlock_title">STEP 4. ACCOUNT SETTINGS</div>
+							<div class="pageBlock_title__container">
+								<div class="pageBlock_title">STEP 4. ACCOUNT SETTINGS</div>
+							</div>
 							<div class="separator separator-lighter"></div>
 							<div class="pageBlock_section pageBlock_section-equal pageBlock_step4">
 								<div class="pageBlock_step4__left mgr30">
@@ -959,7 +1006,7 @@
 									<div class="section-row">
 										<div class="pageBlock_title pageBlock_title-smaller">CONTACT INFORMATION</div>
 									</div>
-									<div class="section-row">
+									<div class="section-row contacts_social">
 										<div class="section_col">
 											<div class="label item_label">SELECT SOCIAL MEDIA</div>
 											<div class="dropdown">
