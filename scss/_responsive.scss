@@ -24,6 +24,47 @@
     .step-list li {
         width: 190px;
     }
+    .os-form {
+        width: 450px;
+        margin-right: 35px;
+    }
+    .aub-field {
+        width: 340px;
+    }
+    .rf-sel {
+        width: 260px;
+    }
+    .res-game-pic {
+        width: 180px;
+    }
+    .res-game-cont {
+        padding-top: 0;
+    }
+    .res-title {
+        padding-right: 0;
+    }
+    .res-btn-block .apf-sub {
+        width: 120px;
+    }
+    .res-text {
+        margin-right: 0;
+    }
+    .res-price-block {
+        margin-bottom: 25px;
+    }
+    .res-info-block {
+        padding-right: 200px;
+    }
+    .game-ac2 {
+
+        .card_container-right {
+            display: none;
+        }
+
+        .card_container-left {
+            margin-right: 0;
+        }
+    }
 }
 
 @include media(1024) {
@@ -399,6 +440,114 @@
         display: none;
     }
 
+    .acount-block  {
+
+        .ap-sidebar {
+            padding: 0 30px;
+        }
+
+        .ap-menu > li {
+            border-top: none;
+
+            &:first-child, &:last-child {
+                border-radius:0;
+            }
+        }
+    }
+
+    .order-selection-block {
+        flex-wrap: wrap;
+    }
+
+    .os-form {
+        width: 100%;
+        margin-right: 0;
+        order: 2;
+    }
+
+    .os-text-block {
+        order: 1;
+    }
+
+    .os-text {
+        display: none;
+    }
+
+    .os-toggle-text {
+        display: block;
+    }
+
+    .attract-users-block {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .aub-field, .aub-text {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .ref-table table th {
+        display: none;
+    }
+
+    .ref-table table td {
+        display: none;
+
+        &:first-child {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+        }
+    }
+
+    .res-form {
+        align-items: flex-start;
+        flex-direction: column;
+
+        .api-btn-block {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .apt-btn {
+            position: absolute;
+            top: 24px;
+            right: 0;
+        }
+
+        .rf-check {
+            bottom: 10px;
+        }
+    }
+
+    .rf-sel {
+        width: 310px;
+        margin-bottom: 16px;
+    }
+
+    .res-left, .res-right {
+        width: 100%;
+    }
+
+    .res-info {
+        width: 50%;
+    }
+
+    .gaf-right {
+        width: 120px;
+        margin-left: 10px;
+    }
+
+    .ga-flex-2 {
+        display: block;
+    }
+
+    .ga-amount {
+        margin-bottom: 40px;
+    }
 
 }
 
@@ -1156,6 +1305,372 @@
         }
     }
 
+    .acount-block {
+
+        .ap-sidebar {
+            padding: 0;
+        }
+    }
+
+    .ac-warning {
+        left: auto;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        margin-left: 0;
+    }
+
+    .ac-check-email {
+        display: block;
+
+        .service-text {
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+
+        .apt-btn {
+            width: 100%;
+        }
+    }
+
+    .osf-row {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        .apf-label {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+
+    .osf-textarea {
+        margin-top: 20px;
+    }
+
+    .res-top-flex {
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+        display: block;
+
+        .apt-btn {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .res-name-game {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .res-form {
+        align-items: stretch;
+        padding-bottom: 0;
+
+        .api-btn-block {
+            position: relative;
+            right: auto;
+            bottom: auto;
+            order: 4;
+            margin: 0;
+            width: 100%;
+            display: block;
+
+            button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .apt-btn {
+            position: relative;
+            top: auto;
+            right: auto;
+            width: 100%;
+            order: 1;
+            margin: 0 0 30px 0;
+        }
+
+        .rf-check {
+            bottom: auto;
+            left: auto;
+            position: relative;
+            width: 100%;
+            order: 3;
+            margin: 15px 0;
+            display: block;
+
+            .checkBox {
+                margin: 0 0 20px 0;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .rf-sel {
+        width: 100%;
+        margin-bottom: 16px;
+        order: 2;
+    }
+
+    .res-left, .res-right {
+        padding: 30px 12px;
+    }
+
+    .res-game-flex {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .res-game-pic {
+        width: 100%;
+
+        &.guide-block {
+            margin: 0 0 15px 0;
+            width: 100%;
+        }
+    }
+
+    .res-game-status {
+        right: -6px;
+        top: -16px;
+        padding: 3px 8px;
+        font-size: 18px;
+    }
+
+    .res-game-table table th {
+        padding: 20px 0 10px 0;
+        font-size: 14px;
+    }
+
+    .res-game-table table td {
+        font-size: 14px;
+    }
+
+    .res-right {
+        text-align: center;
+    }
+
+    .res-price-block {
+        display: block;
+    }
+
+    .res-save {
+        border-radius: 18px;
+        margin: 5px 0 0 0;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .res-btn-block {
+        display: block;
+    }
+
+    .res-btn-block .apf-sub {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .res-btn-help a {
+        display: block;
+        margin: 10px 0 0 0;
+        padding: 10px 0;
+        border: 1px solid #fff;
+        border-radius: 4px;
+    }
+
+    .res-info-block {
+        padding-right: 0;
+
+        .app-link, .op-cont {
+            position: relative;
+            top:auto;
+            right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            height: 45px;
+            border-radius: 4px;
+            border: 1px solid #6D6E7A;
+            font: 15px/130% $font_main;
+            color: $color_main;
+            text-decoration: none;
+            transition: all 300ms ease-out;
+            margin-bottom: 10px;
+
+            &:hover {
+                background: $color_main;
+                color: #000000;
+            }
+        }
+    }
+
+    .res-info-btn {
+        display: block;
+    }
+
+    .res-info-flex {
+        display: none;
+    }
+
+    .res-info {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .gaf-right {
+        margin: 0;
+        width: 100%;
+    }
+
+    .ga-flex {
+        display: block;
+    }
+
+    .gaf-left {
+        display: block;
+        margin: 0;
+    }
+
+    .gaf-item, .gaf-item:last-child {
+        width: 100%;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .gaf-data-block {
+        display: none;
+    }
+
+    .ga-gen-title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .gaf-title {
+        padding: 20px 20px 20px 0;
+        text-align: left;
+        border-top: 1px solid #353551;
+    }
+
+    .gaf-toggle {
+        display: block;
+    }
+
+    .gaf-data-block {
+        margin-bottom: 20px;
+    }
+
+    .gaf-data {
+        justify-content: space-between;
+        padding: 18px 30px;
+
+        span {
+            color: $color_main;
+        }
+
+        b {
+            display: none;
+        }
+    }
+
+    .gaf-data-total {
+        padding: 18px 30px;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+
+    .gaf-item:first-child .gaf-data:nth-child(2n+1), .gaf-item:first-child .gaf-data-total {
+        border-radius: 5px;
+    }
+
+    .gaf-right .gaf-title {
+        display: block;
+    }
+
+    .ga-section {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .ga-title {
+        padding: 20px 20px 20px 0;
+        border-top: 1px solid #353551;
+        margin: 0;
+    }
+
+    .com-par-table {
+        margin-left: 0;
+    }
+
+    .com-par-row {
+        display: block;
+
+        &:nth-child(odd){
+            background: none;
+        }
+    }
+
+    .com-par-item {
+        width: 100%;
+        justify-content: space-between;
+        border-left: none;
+        border-radius: 5px;
+        padding: 10px 16px;
+    }
+
+    .com-par-row:nth-child(even)  .com-par-item:nth-child(even){
+        background: #171829;
+    }
+    .com-par-row:nth-child(odd)  .com-par-item:nth-child(odd){
+        background: #171829;
+    }
+
+    .ga-amount {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .ga-am-block {
+        margin-left: 0;
+    }
+
+    .ga-am-row {
+        display: block;
+
+        &:nth-child(odd) {
+            background:none;
+        }
+
+        &:nth-child(odd) .ga-am-item:nth-child(odd) {
+            background: #171829;
+        }
+
+        &:nth-child(even) .ga-am-item:nth-child(even) {
+            background: #171829;
+        }
+    }
+
+    .ga-am-item {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .ga-lev {
+        width: 100%;
+    }
+
+    .ga-lev-item {
+        margin-left: 0;
+    }
 
 }
 
