@@ -3023,6 +3023,36 @@ body {
 	margin-bottom: 20px;
 }
 
+.pageContent_title, .separator-vertical {
+	flex-shrink: 0;
+}
+
+.pageContent_flex {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pageAgentId {
+	flex-shrink: 0;
+	margin-left: 20px;
+	font: 18px/130% "Montserrat", sans-serif;
+	color: #ffffff;
+}
+
+.pageAgentId span {
+	margin-left: 8px;
+	display: inline-block;
+	padding: 8px;
+	min-width: 123px;
+	border-radius: 5px;
+	background: #2F3151;
+	text-align: center;
+	font: 18px/130% "Montserrat", sans-serif;
+	color: #ffffff;
+}
+
 .attract-users-block {
 	padding: 20px 0;
 	display: flex;
@@ -5694,6 +5724,14 @@ input {
 	}
 	.ga-amount {
 		margin-bottom: 40px;
+	}
+	.pageContent_flex {
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.pageAgentId {
+		margin: 15px 0 0 0;
 	}
 }
 

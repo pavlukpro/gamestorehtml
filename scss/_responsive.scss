@@ -549,6 +549,16 @@
         margin-bottom: 40px;
     }
 
+    .pageContent_flex {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pageAgentId {
+        margin: 15px 0 0 0;
+    }
+
 }
 
 @include media(768) {
