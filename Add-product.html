@@ -6,7 +6,8 @@
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="scss/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/rSlider.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/menu-accordion.js"></script>
@@ -82,12 +83,8 @@
         </header>
 		<div class="fixed pageContent_wrapper">
 			<div class="pageContent">
-<!--Add product-->
-<!--
-                	.pageContent_row>(.ap-cont.pageBlock.bg-filled>.pageContent_title+.separator.separator-light+.select_container>.selectGame_container>(li.active>a)+li*2>a)
--->
 				<div class="pageContent_row">
-					<div class="ap-cont pageBlock bg-filled">
+					<div class="pageBlock bg-filled">
 						<div class="pageContent_title">Add product</div>
 						<div class="separator separator-light"></div>
 						<div class="select_container">
@@ -109,9 +106,7 @@
 				</div>	
                 		
 <!--Steps-->
-<!--
-          			.pageContent_row>.pageBlock.bg-filled>(.pageBlock_title__container>.pageBlock_title)+.separator.separator-light+.step_container>(.step>.step_num+(.step_dot__container>.step_dot+.step_dot__line)+.step_title)*4
--->
+
          			<div class="pageContent_row">
          				<div class="pageBlock bg-filled pageBlock_steps">
          					<div class="pageBlock_title__container">
@@ -156,9 +151,7 @@
          			</div>
          			
 <!--Step 1-->
-<!--
-					.pageContent_row>.pageBlock.bg-filled>(.pageBlock_title__container>.pageBlock_title)+.pageBlock_section.section-row>(.pageBlock_item>label.item_label+.dropdown_container>(.dropdown_arrow)+(.dropdown_item>.dropdown_descr)*4)+(.pageBlock_item>label.item_label+.section-row>(.radioBox>input[name="accountType" type="radio"]+label)*2)+(.pageBlock_item>label.item_label+.dropdown_container>(.dropdown_arrow)+(.dropdown_item>.dropdown_descr)*4)*2+.definitor+.pageBlock_section.section-row>(.pageBlock_item>label.item_label+.input-evaluated>input+label)*2+.steps_btn__container>a.steps_btn{PREV STEP}+a.steps_btn.steps_btn-active{NEXT STEP}
--->
+
 					<div class="pageContent_row">
 						<div class="pageBlock bg-filled pageBlock_step1">
 							<div class="pageBlock_title__container">
@@ -228,9 +221,7 @@
 					</div>
           			
 <!--Step 2-->
-<!--
-					.pageContent_row>.pageBlock.bg-filled>(.pageBlock_title__container>.pageBlock_title{step 2. Primary account})+.separator.separator-lighter+(.pageBlock_section.pageBlock_section-cols05>(.pageBlock_item>.pageBlock_title{INFANTRY}+(.section-row>label.item_label{$ LVL}+.input-evaluated>input[placeholder=0]+label{K})*12)*4+(.pageBlock_item>.pageBlock_title{COMBAT EQUIPMENT}+.radioBox>input[name="accountType" type="radio"]+(.section-row>(.checkBox>input[type=checkbox]+label)+.dropdown>(.dropdown_arrow)+.dropdown_item)*5))+.separator.separator-lighter+.pageBlock_title{COMBAT PAREMETERS}+.pageBlock_section.pageBlock_section-cols04>(.pageBlock_item>(.section-row>label.item_label{ARMY SOMETHING}+(.pageBlock_item>.input-evaluated>input[value=0]+label{%}))*5)*4
--->
+
 					<div class="pageContent_row">
 						<div class="pageBlock sm-accordeons bg-filled">
 							<div class="pageBlock_title__container">
@@ -849,12 +840,7 @@
 							</div>
 					   	</div>
 			   		</div>
-<!--
-.section-row = Новая строка flex row
-.pageBlock_item = Элемент блока
 
-					.pageContent_row>.pageBlock.bg-filled>(.pageBlock_title__container>.pageBlock_title{STEP 3. PROPERTY PRICE})+.separator.separator-lighter+.pageBlock_section.pageBlock_section-equal>(.pageBlock_item>.item_label{PROPERTY DESCRITION}+textarea.bTextarea[paceholder=Enter text...])+.pageBlock_item>.item_label{SCREENSHOTS}+(.section-row.screen_container>(.screen>img.screen_img[src=images/screenshot-empty.png]+.screen_removal)*12)+.section-row>.screen_btn+.step_btn__container>a.step_btn.btn{PREV STEP}+a.step_btn.btn.btn-blue{NEXT STEP}
--->
 					<div class="pageContent_row">
 						<div class="pageBlock bg-filled">
 							<div class="pageBlock_title__container">
@@ -967,9 +953,7 @@
 					</div>
 					
 <!--Step 4-->
-<!--
-					.pageContent_row>.pageBlock.bg-filled>(.pageBlock_title__container>.pageBlock_title{STEP 4.ACCOUNT SETTINGS})+.separator.separator-lighter+.pageBlock_section.pageBlock_section-equal>(.pageBlock_item>(.section-row>.pageBlock_title.pageBlock_title-smaller)+(.section-row>(.section_col>label.item_label{FIRST NAME *}+input.input-simple[placeholder=Enter text])+(.section_col>label.item_label{SECOND NAME *}+input.input-simple[placeholder=Enter text]))+(.section-row>(.section_col>label.item_label{COUNTRY}+.dropdown>.dropdown_arrow+.dropdown_item{Select})+(.section_col>label.item_label{E-MAIL *}+input.input-simple[placeholder=Enter text])))+(.pageBlock_item>(.section-row>.pageBlock_title.pageBlock_title-smaller{CONTACT INFORMATION})+(.section-row>(.section_col>.dropdown>.dropdown_arrow+.dropdown_item{Telegram})+(.section_col>.btn.btn-green{ADD}))+(.section-row>(.section_col>.label.item_label{WHATSAPP}+input.input-simple[placeholder=Link...])+.section_col>.label.item_label{Delete})+(.section-row>(.section_col>.label.item_label{Telegram}+input.input-simple[placeholder=Link...])+.section_col>.label.item_label{Delete}))
--->
+
 					<div class="pageContent_row">
 						<div class="pageBlock bg-filled pageBlock_step4">
 							<div class="pageBlock_title__container">

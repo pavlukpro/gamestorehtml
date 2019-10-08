@@ -113,6 +113,11 @@ var siteWidth = $('#site')[0].getBoundingClientRect().width;
 			$(this).parent().toggleClass('active');
 		})
 	}
+	$('.pageBlock_section-fastBuy .section_col > .section-row').click(function(){
+		if (siteWidth <= 768) {
+			$(this).toggleClass('active');
+		}
+	})
 
 //Текст инструкции в мобильной версии на странице Selection.html --------------------------------------------------------------------------------------------------------------
     $(".os-toggle-text").click(function () {
@@ -135,5 +140,8 @@ var siteWidth = $('#site')[0].getBoundingClientRect().width;
     $(".gaf-toggle").click(function () {
         $(this).parent().next(".gaf-data-block").slideToggle();
     });
+//Ползунки диапазона _________________________________________________________________
 
+
+// --------------------------------------------------------------------------------------------------------------
 });//конец ready
