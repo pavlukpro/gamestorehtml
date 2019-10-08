@@ -23,3 +23,6 @@ img {
 	height: auto;
 }
 
+label, button, input[type=submit], input[type=button] {
+    user-select: none;
+}

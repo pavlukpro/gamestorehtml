@@ -837,7 +837,7 @@ body {
             -moz-osx-font-smoothing: grayscale;
             content: "\ea10";
             position: absolute;
-            left: 6px;
+            left: 5px;
             top: 6px;
             color: $color_main;
             font-size: 15px;
@@ -883,7 +883,7 @@ body {
     list-style: none;
 
     li {
-        margin-bottom: 25px;
+        margin: 10px 0 25px 0;
 
         a {
             font: 300 14px/130% $font_main;
@@ -1528,6 +1528,16 @@ body {
             box-shadow: 0px 10px 20px rgba(9,31,67,0.99);
         }
 
+        &:last-child:hover {
+            background: none;
+            box-shadow: none;
+
+            a {
+                color: $color_red;
+                transition: all 300ms ease-out;
+            }
+        }
+
         a {
             display: block;
             padding: 12px 30px 12px 20px;
@@ -1545,6 +1555,7 @@ body {
                 right: 15px;
                 top: 50%;
                 transform: translate(0, -50%);
+                margin-top: 1.5px;
 
                 &:before {
                     content: "\e905";
@@ -1758,7 +1769,7 @@ body {
     bottom: 0;
     width: 42px;
     margin: 0;
-    padding: 0;
+    padding: 2px 0 0 0;
     border: none;
     background: none;
     text-align: center;
@@ -1770,6 +1781,11 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     border-radius: 0;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .apf-sub {
@@ -2053,6 +2069,11 @@ body {
         background: #146DFC;
     }
 
+    &.delete:hover {
+        background: none;
+        color: $color_red;
+    }
+
     b {
         display: none;
         font: 12px/130% $font_main;
@@ -2085,9 +2106,10 @@ body {
         -webkit-appearance: none;
         -moz-appearance: none;
         border-radius: 0;
+        transition: all 300ms ease-out;
 
         &:hover {
-            text-decoration: underline;
+            color: $color_red;
         }
 
         &:active {
@@ -2145,6 +2167,7 @@ body {
     font: 14px/130% $font_main;
     color:$color_main;
     text-transform: uppercase;
+    user-select: none;
 
     &:before {
         content: "";
@@ -2742,6 +2765,11 @@ body {
             background: #146DFC;
         }
 
+        &.ac-ava-del:hover {
+            background: none;
+            color: $color_red;
+        }
+
         b {
             display: none;
         }
@@ -2964,7 +2992,7 @@ body {
 .attract-users-block {
     padding: 20px 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end;
 
     .apf-sub {
@@ -3851,4 +3879,9 @@ body {
         margin-bottom: 20px;
     }
 }
+
+//
+
+
+
 
