@@ -24,9 +24,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-dollar-sign:before {
-    content: "\e90f";
-}
 .icon-reload:before {
     content: "\e90e";
 }
@@ -1899,7 +1896,6 @@ body {
 }
 
 .nav-links {
-    position: relative;
     margin: 40px 0;
     display: -webkit-box;
 	display: -moz-box;
@@ -2525,32 +2521,6 @@ body {
 
 /*------------------------------------------------------------------*/
 
-.acount-block {
-
-    .ap-sidebar {
-        padding: 0;
-    }
-
-    .ap-menu > li {
-        margin: 0;
-        border-radius: 0;
-        border-top: 1px solid #2E2F44;
-
-        &:first-child {
-            border-radius: 5px 5px 0 0;
-            border-top: none;
-        }
-
-        &:last-child {
-            border-radius: 0 0 5px 5px;
-        }
-    }
-
-    .ap-cont {
-        background: rgba(31, 32, 53, 0.87);
-    }
-}
-
 .ac-top {
     margin-bottom: 16px;
     padding: 0 32px;
@@ -2611,7 +2581,6 @@ body {
 .ac-item {
     width: 275px;
     margin: 0 30px 15px 0;
-    position: relative;
 }
 
 .ac-title {
@@ -2797,6 +2766,7 @@ body {
         box-shadow: none;
     }
 }
+
 
 .ac-warning {
     font: 14px/130% $font_main;
@@ -3881,5 +3851,4 @@ body {
         margin-bottom: 20px;
     }
 }
-
 

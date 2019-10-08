@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet" />
     <link href="scss/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/multirange.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/menu-accordion.js"></script>
+    <script src="js/multirange.js"></script>
     <script src="js/main.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -85,35 +87,69 @@
 				<div class="pageContent_row">
 					<div class="pageBlock bg-filled">
 						<div class="pageBlock_section-start">
-							<div class="pageContent_title">Favorite</div>
+							<div class="pageContent_title">Z-Day</div>
 							<div class="separator-vertical"></div>
-							<div class="screen_btn btn-green btn">CLEAR LIST</div>
+							<div class="screen_btn btn-green btn">+ ADD ITEM</div>
+						</div>
+						<div class="section-row lined-top">
+							<div class="select_container amounted">
+								<div class="btnLined_container sm-hide">
+									<a class="btnLined btnLined-active" href="">Accounts
+										<span class="btnLined_amount">(58)</span>
+									</a>
+									<a class="btnLined" href="">Gold
+										<span class="btnLined_amount">(352)</span>
+									</a>
+									<a class="btnLined" href="">Silver
+										<span class="btnLined_amount">(352)</span>
+									</a>
+								</div>
+								<div class="pageBlock_item sm-show">
+									<label for="" class="item_label">Select game</label>
+									<div class="dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">King of Alavon</div>
+									</div>
+								</div>
+							</div>
+							<div class="input-search">
+								<input placeholder="Search" type="text">
+								<input type="submit">
+							</div>
 						</div>
 					</div>
 				</div>
-				
+				<div class="pageContent_row">
+					<div class="pageBlock bg-filled">
+						<div class="pageBlock_section guides">
+							<div class="section-row">
+								<div class="section_col mgr30">
+									<label for="" class="item_label">STATUS</label>
+									<div class="dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Sale</div>
+									</div>
+								</div>
+								<div class="section_col">
+									<label for="" class="item_label">SALE</label>
+									<div class="dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Sale</div>
+									</div>
+								</div>
+							</div>
+							<div class="step_btn__container">
+							   <a href="" class="btn btn-simple">Clear</a>
+							   <a href="" class="btn btn-blue">SEARCH</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="pageContent_row card_container">
 					<div class="card_container-left">
-						<div class="pageBlock_section card_filters">
-							<div class="section-row">
-								<div class="item_label">SORT BY</div>
-								<div class="dropdown">
-									<div class="dropdown_arrow"></div>
-									<div class="dropdown_item">Most seller</div>
-								</div>
-							</div>
-							<div class="section-row sm-hide">
-								<div class="item_label">ON PAGE</div>
-								<div class="dropdown">
-									<div class="dropdown_arrow"></div>
-									<div class="dropdown_item">10</div>
-								</div>
-							</div>
-						</div>
 						<div class="card_wrapper">
 							<div class="card">
 								<div class="card_img__container">
-									<div class="card_favorite active"></div>
 									<div class="card_img"><img src="images/card_img.png" alt=""></div>
 								</div>
 								<div class="card_content">
@@ -124,9 +160,63 @@
 									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
 									<div class="section-row">
 										<div class="card_date">12 jul 2019</div>
-										<div class="card_status__wrapper">
-											<span>Status:</span><div class="card_status">Actively</div>
-										</div>
+										<a class="card_edit">Quick edit</a>
+										<a class="card_copy">Create copy</a>
+									</div>
+								</div>
+								<div class="card_price">$ 2000</div>
+								<div class="card_buttons">
+									<a class="card_edit-sm btn">Quick edit</a>
+									<a class="card_copy-sm btn">Create copy</a>
+									<a class="card_btn btn btn-blue">MORE</a>
+								</div>
+							</div>
+							<div class="separator card_separator"></div>
+							<div class="card_settings section-row">
+								<div class="pageBlock_item card_dropdown01">
+									<label for="" class="item_label">STATUS</label>
+									<div class="dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Public</div>
+									</div>
+								</div>
+								<div class="pageBlock_item card_dropdown02">
+									<label for="" class="item_label">SALE</label>
+									<div class="dropdown">
+										<div class="dropdown_arrow"></div>
+										<div class="dropdown_item">Sold out</div>
+									</div>
+								</div>
+								<div class="pageBlock_item card_settings__actions">
+									<div class="card_settings__remove"></div>
+									<a class="card_btn btn btn-blue">SAVE</a>
+								</div>
+								<div class="section-start card_settings__checkbox">
+									<label class="checkBox">
+										<input class="checkBox_input" type="checkbox">
+										<span class="checkBox_title">To scoop up</span>
+									</label>
+									<label class="checkBox">
+										<input class="checkBox_input" type="checkbox">
+										<span class="checkBox_title">Hot offer</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="card_wrapper">
+							<div class="card">
+								<div class="card_img__container">
+									<div class="card_favorite"></div>
+									<div class="card_img"><img src="images/card_img.png" alt=""></div>
+								</div>
+								<div class="card_content">
+									<div class="section-row">
+										<div class="card_title">Z-Day</div>
+										<div class="card_id">ID: GoG00034</div>
+									</div>
+									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
+									<div class="section-row">
+										<div class="card_date">12 jul 2019</div>
 										<a class="card_edit">Quick edit</a>
 									</div>
 								</div>
@@ -151,15 +241,14 @@
 									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
 									<div class="section-row">
 										<div class="card_date">12 jul 2019</div>
-										<div class="card_status__wrapper">
-											<span>Status:</span><div class="card_status">Actively</div>
-										</div>
 										<a class="card_edit">Quick edit</a>
 									</div>
 								</div>
-								<div class="card_price">$ 2000</div>
+								<div class="card_price">
+									<div class="card_price-was">$ 2000</div>
+									$ 2000
+								</div>
 								<div class="card_buttons">
-									<a class="card_edit-sm btn">Quick edit</a>
 									<a class="card_btn btn btn-blue">MORE</a>
 								</div>
 							</div>
@@ -178,15 +267,11 @@
 									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
 									<div class="section-row">
 										<div class="card_date">12 jul 2019</div>
-										<div class="card_status__wrapper">
-											<span>Status:</span><div class="card_status">Actively</div>
-										</div>
 										<a class="card_edit">Quick edit</a>
 									</div>
 								</div>
 								<div class="card_price">$ 2000</div>
 								<div class="card_buttons">
-									<a class="card_edit-sm btn">Quick edit</a>
 									<a class="card_btn btn btn-blue">MORE</a>
 								</div>
 							</div>
@@ -206,9 +291,6 @@
 									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
 									<div class="section-row">
 										<div class="card_date">12 jul 2019</div>
-										<div class="card_status__wrapper">
-											<span>Status:</span><div class="card_status">Actively</div>
-										</div>
 										<a class="card_edit">Quick edit</a>
 									</div>
 								</div>
@@ -217,7 +299,6 @@
 									$ 2000
 								</div>
 								<div class="card_buttons">
-									<a class="card_edit-sm btn">Quick edit</a>
 									<a class="card_btn btn btn-blue">MORE</a>
 								</div>
 							</div>
@@ -236,73 +317,11 @@
 									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
 									<div class="section-row">
 										<div class="card_date">12 jul 2019</div>
-										<div class="card_status__wrapper">
-											<span>Status:</span><div class="card_status">Actively</div>
-										</div>
 										<a class="card_edit">Quick edit</a>
 									</div>
 								</div>
 								<div class="card_price">$ 2000</div>
 								<div class="card_buttons">
-									<a class="card_edit-sm btn">Quick edit</a>
-									<a class="card_btn btn btn-blue">MORE</a>
-								</div>
-							</div>
-						</div>
-						<div class="card_wrapper">
-							<div class="card">
-								<div class="card_img__container">
-									<div class="card_favorite"></div>
-									<div class="card_hot">HOT</div>
-									<div class="card_img"><img src="images/card_img.png" alt=""></div>
-								</div>
-								<div class="card_content">
-									<div class="section-row">
-										<div class="card_title">Z-Day</div>
-										<div class="card_id">ID: GoG00034</div>
-									</div>
-									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
-									<div class="section-row">
-										<div class="card_date">12 jul 2019</div>
-										<div class="card_status__wrapper">
-											<span>Status:</span><div class="card_status">Actively</div>
-										</div>
-										<a class="card_edit">Quick edit</a>
-									</div>
-								</div>
-								<div class="card_price">
-									<div class="card_price-was">$ 2000</div>
-									$ 2000
-								</div>
-								<div class="card_buttons">
-									<a class="card_edit-sm btn">Quick edit</a>
-									<a class="card_btn btn btn-blue">MORE</a>
-								</div>
-							</div>
-						</div>
-						<div class="card_wrapper">
-							<div class="card">
-								<div class="card_img__container">
-									<div class="card_favorite"></div>
-									<div class="card_img"><img src="images/card_img.png" alt=""></div>
-								</div>
-								<div class="card_content">
-									<div class="section-row">
-										<div class="card_title">Z-Day</div>
-										<div class="card_id">ID: GoG00034</div>
-									</div>
-									<div class="card_descr">Kingdom 323, 30ssh, 157min power, 65 lvl dragon</div>
-									<div class="section-row">
-										<div class="card_date">12 jul 2019</div>
-										<div class="card_status__wrapper">
-											<span>Status:</span><div class="card_status">Actively</div>
-										</div>
-										<a class="card_edit">Quick edit</a>
-									</div>
-								</div>
-								<div class="card_price">$ 2000</div>
-								<div class="card_buttons">
-									<a class="card_edit-sm btn">Quick edit</a>
 									<a class="card_btn btn btn-blue">MORE</a>
 								</div>
 							</div>
