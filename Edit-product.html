@@ -6,7 +6,7 @@
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="scss/style.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/menu-accordion.js"></script>
@@ -89,7 +89,7 @@
 				<div class="pageContent_row">
 					<div class="pageBlock bg-filled prodProps_container">
 						<div class="section-row prodProps_top">
-							<div class="section-col">
+							<div class="section_col">
 								<div class="pageContent_title">Edit product</div>
 								<div class="pageBlock_explain">ID: GoG00034</div>
 							</div>
@@ -179,10 +179,17 @@
 						</div>
 						<div class="separator separator-light"></div>
 						<div class="select_container">
-							<div class="btnLined_container">
+							<div class="btnLined_container sm-hide">
 								<a class="btnLined btnLined-active" href="">King of Avalon</a>
 								<a class="btnLined" href="">Guns of Glory</a>
 								<a class="btnLined" href="">Z-Day</a>
+							</div>
+							<div class="pageBlock_item sm-show">
+								<label for="" class="item_label">Select game</label>
+								<div class="dropdown">
+									<div class="dropdown_arrow"></div>
+									<div class="dropdown_item">King of Alavon</div>
+								</div>
 							</div>
 						</div>
 					</div>
