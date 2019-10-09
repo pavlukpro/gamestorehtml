@@ -3966,6 +3966,9 @@ body {
   .ap-menu li:hover ul li a:before, .ap-menu li.open ul li a:before, .ap-menu li.active ul li a:before {
     display: none;
   }
+  .ap-menu li:last-child a:before {
+    display: none;
+  }
   .ap-menu li a {
     padding: 12px 14px;
     position: relative;
@@ -5266,7 +5269,20 @@ body {
     margin: 20px 0 0 0;
   }
 
-  .apf-row:last-child {
+  .ap-mob-block {
+    display: block;
+  }
+
+  .apg-section {
+    margin-bottom: 0;
+  }
+
+  .ac-ava-btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .ac-ava-btn .ac-ava-del {
+    order: 3;
     margin-bottom: 0;
   }
 }
